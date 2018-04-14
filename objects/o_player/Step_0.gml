@@ -5,9 +5,10 @@ MOVELEFT = keyboard_check(vk_left);
 MOVERIGHT = keyboard_check(vk_right);
 MOVEUP = keyboard_check(vk_up);
 MOVEDOWN = keyboard_check(vk_down);
-FIRE1 = keyboard_check(vk_space);
+//FIRE1 = keyboard_check(vk_space);
 FIRE2 = keyboard_check(vk_control);
- 
+//FIRE3 = keyboard_check_pressed(vk_space);
+
 //Move Player
 if (MOVELEFT && x > sprite_width/2) 
 { 
@@ -28,6 +29,6 @@ if (MOVEDOWN && y < room_height - sprite_width/2)
 { 
     y += playerSpeed; 
 }
-if (FIRE1) {
+/*if (FIRE1) {
 	building1 = true;
-}
+}*/

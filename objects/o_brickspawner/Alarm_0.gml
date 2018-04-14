@@ -3,7 +3,9 @@
 
 //instance_create_layer(random(room_width), random(room_height), "Brick_Layer", o_brick);
 
-if (building1) {
+FIRE3 = keyboard_check(vk_space);
+
+if (FIRE3) {
 	instance_create_layer(x+48, y+48, "Brick_Layer", o_brick);
 }
 
